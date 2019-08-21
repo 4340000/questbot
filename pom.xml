@@ -9,8 +9,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
-    
+    </properties>    
     <build>
 <plugins>
     <plugin>
@@ -26,8 +25,7 @@
             </processTypes>
         </configuration>
     </plugin>
-</plugins>
-        
+</plugins>        
     <dependencies>
         <dependency>
             <groupId>org.telegram</groupId>
