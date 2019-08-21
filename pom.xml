@@ -114,7 +114,7 @@
         <artifactId>heroku-maven-plugin</artifactId>
         <version>2.0.8</version>
         <configuration>
-            <appName>questbot-test</appName>
+            <appName>yourAppName_on_Heroku</appName>
             <processTypes>
                 <worker>
                     java $JAVA_OPTS -cp target/classes:target/dependency/* path.to.your.Main-class
