@@ -11,6 +11,23 @@
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
     
+    <build>
+<plugins>
+    <plugin>
+        <groupId>com.heroku.sdk</groupId>
+        <artifactId>heroku-maven-plugin</artifactId>
+        <version>2.0.8</version>
+        <configuration>
+            <appName>yourAppName_on_Heroku</appName>
+            <processTypes>
+                <worker>
+                    java $JAVA_OPTS -cp target/classes:target/dependency/* path.to.your.Main-class
+                </worker>
+            </processTypes>
+        </configuration>
+    </plugin>
+</plugins>
+        
     <dependencies>
         <dependency>
             <groupId>org.telegram</groupId>
@@ -106,21 +123,5 @@
             <artifactId>h2</artifactId>
             <version>1.4.196</version>
         </dependency>
-    </dependencies>
-    <build>
-<plugins>
-    <plugin>
-        <groupId>com.heroku.sdk</groupId>
-        <artifactId>heroku-maven-plugin</artifactId>
-        <version>2.0.8</version>
-        <configuration>
-            <appName>yourAppName_on_Heroku</appName>
-            <processTypes>
-                <worker>
-                    java $JAVA_OPTS -cp target/classes:target/dependency/* path.to.your.Main-class
-                </worker>
-            </processTypes>
-        </configuration>
-    </plugin>
-</plugins>
+    </dependencies>    
 </project>
