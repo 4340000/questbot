@@ -41,7 +41,7 @@ import ru.p03.questbot.util.UpdateUtil;
 public class Bot extends TelegramLongPollingBot {
 
     public static String TOKEN = "986272844:AAE4iUZZn_WhcCQJDc9rozC6zJzc3zPv4Jc";
-    public static String USERNAME = "HappyBirthdayAliya_bot";
+    public static String USERNAME = "@HappyBirthdayAliya_bot";
 
     public static final String OPEN_MAIN = "OM";
     public static final String GET_ANSWER = "GA";
